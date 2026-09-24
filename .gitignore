@@ -42,3 +42,5 @@ services_screenshot.png
 success_stories_fullpage.png
 v6_desktop_screenshot.png
 v6_mobile_screenshot.png
+# TypeScript build cache
+*.tsbuildinfo

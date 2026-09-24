@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import SpecsMatrix from '@/components/SpecsMatrix';
 import {
   Award,
   ShieldCheck,
@@ -318,31 +319,12 @@ export default function FemaleFitnessTrainersPage() {
       </section>
 
       {/* 2. SPECIFICATION MATRIX */}
-      <section className="section-surface" style={{ padding: '60px 0', borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)' }}>
-        <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto 40px' }}>
-            <span style={{ fontSize: '12px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--brand-gold)' }}>
-              Female Concierge Training Specs
-            </span>
-            <h2 style={{ fontSize: '28px', color: 'var(--text-main)', marginTop: '8px', fontWeight: 700 }}>
-              Tailored Specifically for Women's Physiological Needs
-            </h2>
-          </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
-            {specs.map((spec, i) => (
-              <div key={i} className="card-clean" style={{ padding: '22px 24px', borderRadius: '14px' }}>
-                <div style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: 700, marginBottom: '6px' }}>
-                  {spec.label}
-                </div>
-                <div style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-main)', lineHeight: 1.4 }}>
-                  {spec.value}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SpecsMatrix
+        badge="Female Concierge Training Specs"
+        title="Tailored Specifically for Women's Physiological Needs"
+        subtitle="Private in-home fitness led by certified female trainers with comprehensive background verification."
+        specs={specs}
+      />
 
       {/* 3. FOUR CLINICAL PILLARS */}
       <section className="section-page" style={{ padding: '80px 0' }}>
