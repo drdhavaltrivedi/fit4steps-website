@@ -241,7 +241,7 @@ export default function GurugramLocationPage() {
             >
               <MessageCircle size={18} /> WhatsApp Assessment
             </a>
-            <Link href="/senior-fitness" className="btn btn-outline">
+            <Link href="/fitness-training-program-for-senior-citizens" className="btn btn-outline">
               Senior Programs <ArrowRight size={16} />
             </Link>
           </div>

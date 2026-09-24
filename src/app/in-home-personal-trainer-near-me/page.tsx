@@ -24,29 +24,31 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Personal Training at Home in Noida, Delhi & Gurugram | Fit4Steps',
-  description: 'Certified 1-on-1 personal fitness trainer at your doorstep. We bring sanitized dumbbells, resistance bands & mats to your home. Fat loss, muscle toning, posture correction, and strength coaching across Delhi NCR.',
+  title: "In-Home Personal Trainer Near Me - Fitness Trainer at Home Noida & Delhi NCR | Fit4Steps",
+  description: "Ranked #1 fitness trainer at home in Noida, South Delhi & Gurugram. Certified personal trainer at your doorstep with sanitized equipment, biomechanical screening & nutrition coaching.",
   keywords: [
-    'personal training at home',
-    'in-home personal trainer delhi',
-    'fitness trainer at home noida',
-    'personal trainer at home gurugram',
-    'doorstep gym trainer',
-    'home workout personal trainer delhi ncr',
-    'private fitness coach south delhi'
+    "in-home personal trainer near me",
+    "fitness trainer at home noida",
+    "personal trainer at home noida sector 137",
+    "in-home personal trainer delhi",
+    "home personal trainer gurugram",
+    "doorstep fitness coach noida expressway",
+    "personal fitness trainer south delhi"
   ],
   alternates: {
-    canonical: 'https://fit4steps.com/services/personal-training-at-home',
+    canonical: "https://fit4steps.com/in-home-personal-trainer-near-me",
   },
 };
 
-export default function PersonalTrainingAtHomePage() {
+
+
+export default function InHomePersonalTrainerNearMePage() {
   const schemaData = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'Service',
-        '@id': 'https://fit4steps.com/services/personal-training-at-home#service',
+        '@id': 'https://fit4steps.com/in-home-personal-trainer-near-me#service',
         name: 'Personal Training at Home Delhi NCR',
         serviceType: 'In-Home Personal Fitness Coaching',
         provider: {
@@ -96,7 +98,7 @@ export default function PersonalTrainingAtHomePage() {
             '@type': 'ListItem',
             position: 3,
             name: 'Personal Training at Home',
-            item: 'https://fit4steps.com/services/personal-training-at-home',
+            item: 'https://fit4steps.com/in-home-personal-trainer-near-me',
           },
         ],
       },
@@ -727,9 +729,9 @@ export default function PersonalTrainingAtHomePage() {
 
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center', marginBottom: '32px' }}>
             {[
-              { name: 'Noida Expressway', link: '/services/personal-training-at-home' },
-              { name: 'Jaypee Greens Sector 128 & 133', link: '/services/personal-training-at-home' },
-              { name: 'Sector 50 & 78 Noida', link: '/services/personal-training-at-home' },
+              { name: 'Noida Expressway', link: '/locations/noida' },
+              { name: 'Jaypee Greens Sector 128 & 133', link: '/locations/noida' },
+              { name: 'Sector 50 & 78 Noida', link: '/locations/noida' },
               { name: 'Greater Kailash (GK 1 & 2)', link: '/personal-trainer-greater-kailash-delhi' },
               { name: 'Vasant Vihar & Anand Niketan', link: '/personal-fitness-trainer-delhi' },
               { name: 'Panchsheel & Defence Colony', link: '/personal-fitness-trainer-delhi' },
@@ -756,11 +758,11 @@ export default function PersonalTrainingAtHomePage() {
 
           <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap', fontSize: '13.5px' }}>
             <span style={{ color: 'var(--text-muted)' }}>Explore specialized alternatives:</span>
-            <Link href="/services/female-fitness-trainers" style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Female Fitness Trainers</Link>
+            <Link href="/female-fitness-trainers-in-delhi" style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Female Fitness Trainers</Link>
             <span style={{ color: 'var(--text-muted)' }}>•</span>
-            <Link href="/services/couple-training" style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Couple Training</Link>
+            <Link href="/couples-fitness-training-at-home-delhi" style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Couple Training</Link>
             <span style={{ color: 'var(--text-muted)' }}>•</span>
-            <Link href="/senior-fitness" style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Senior Citizen Knee Therapy</Link>
+            <Link href="/fitness-training-program-for-senior-citizens" style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Senior Citizen Training</Link>
           </div>
         </div>
       </section>

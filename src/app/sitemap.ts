@@ -13,34 +13,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/v6',
     '/about',
     '/about/trainers',
-    '/senior-fitness',
-    '/senior-fitness/fifty-plus',
-    '/senior-fitness/strength-seniors',
+    // Flagship & Ranking Senior Programs
+    '/fitness-training-program-for-senior-citizens',
+    '/strength-training-for-seniors-at-home-delhi',
+    '/strength-training-for-seniors-at-home-gurugram',
+    '/exercises-for-senior-citizens-gurugram',
+    '/mobility-exercises-for-senior-citizens',
+    '/personal-fitness-training-for-50-plus',
     '/senior-fitness/knee-therapy',
-    '/senior-fitness/mobility-balance',
+    '/senior-citizen-fitness-trainer-at-home-delhi',
+    '/senior-citizen-fitness-trainer-at-home-gurugram',
+    // Flagship & Ranking In-Home Personal Training Services
+    '/in-home-personal-trainer-near-me',
+    '/female-fitness-trainers-in-delhi',
+    '/couples-fitness-training-at-home-delhi',
+    '/fitness-training-for-kids-noida',
     '/services',
-    '/services/personal-training-at-home',
-    '/services/female-fitness-trainers',
-    '/services/couple-training',
-    '/services/kids-fitness-functional-training',
     '/services/prenatal-postnatal-yoga',
     '/services/corrective-exercise-lifestyle-diseases',
     '/services/stress-management-training',
     '/services/personalized-online-training',
     '/services/corporate-wellness-yoga',
+    // Locations
     '/locations',
     '/locations/noida',
-    '/locations/delhi',
     '/locations/gurugram',
-    '/senior-citizen-fitness-trainer-at-home-delhi',
-    '/senior-citizen-fitness-trainer-at-home-gurugram',
     '/personal-fitness-trainer-delhi',
     '/personal-trainer-greater-kailash-delhi',
-    '/mobility-exercises-for-senior-citizens',
-    '/female-fitness-trainers-in-delhi',
-    '/couples-fitness-training-at-home-delhi',
-    '/fitness-training-for-kids-noida',
-    '/personal-fitness-training-for-50-plus',
+    // Programs Hub & Individual Programs
     '/programs',
     '/programs/weight-training',
     '/programs/yoga',
@@ -54,6 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/programs/hiit',
     '/programs/trx-exercise',
     '/programs/sports-games',
+    // Blog Hub & Articles
     '/blog',
     '/blog/exercises-for-knee-pain',
     '/blog/safe-exercises-for-elderly',
@@ -63,6 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/blog/diastasis-recti-postnatal-recovery',
     '/blog/screen-time-and-kids-posture',
     '/blog/how-to-set-up-home-workout-space',
+    // Company, Trust & Legal
     '/success-stories',
     '/faq',
     '/contact',
@@ -74,6 +76,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: route === '' || route.startsWith('/blog') ? 'weekly' : 'monthly',
-    priority: route === '' ? 1.0 : route.startsWith('/senior-fitness') || route.startsWith('/locations') ? 0.9 : 0.8,
+    priority:
+      route === ''
+        ? 1.0
+        : route === '/fitness-training-program-for-senior-citizens' ||
+          route === '/in-home-personal-trainer-near-me' ||
+          route.startsWith('/strength-training')
+        ? 0.95
+        : route.startsWith('/locations') || route.startsWith('/services')
+        ? 0.9
+        : 0.8,
   }));
 }

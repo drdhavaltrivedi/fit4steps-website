@@ -116,7 +116,7 @@ const articlesData: Record<string, ArticleData> = {
     readTime: '8 min read',
     date: 'August 20, 2026',
     description: 'A geriatric fitness guide on chair squats, tandem stance balance, ankle pumps, and safe in-home routines for elderly parents living in Delhi NCR.',
-    leadServiceUrl: '/senior-fitness',
+    leadServiceUrl: '/fitness-training-program-for-senior-citizens',
     leadServiceText: 'Senior Citizen In-Home Coaching',
     content: {
       intro: 'Remaining active in older age is the single best predictor of longevity, cognitive clarity, and independent living. Yet fear of falling or joint injury often prevents seniors from exercising. This guide outlines four foundational movements that can be performed safely at home with zero expensive equipment.',
@@ -172,7 +172,7 @@ const articlesData: Record<string, ArticleData> = {
     readTime: '5 min read',
     date: 'August 18, 2026',
     description: 'Discover how progressive resistance bands and light dumbbells reverse muscle loss, protect against osteoporosis, and supercharge vitality after 50.',
-    leadServiceUrl: '/senior-fitness/fifty-plus',
+    leadServiceUrl: '/personal-fitness-training-for-50-plus',
     leadServiceText: 'Personal Coaching for 50+',
     content: {
       intro: 'For decades, conventional fitness advice for adults over 50 focused almost exclusively on gentle morning walks. While walking is wonderful for cardiovascular health, it does almost nothing to stop sarcopenia (age-related muscle loss) or bone density decline.',
@@ -215,7 +215,7 @@ const articlesData: Record<string, ArticleData> = {
     readTime: '5 min read',
     date: 'August 15, 2026',
     description: 'A 15-minute gentle mobility routine for older adults to eliminate morning hip, spine, and knee stiffness before getting out of bed.',
-    leadServiceUrl: '/senior-fitness/mobility-balance',
+    leadServiceUrl: '/mobility-exercises-for-senior-citizens',
     leadServiceText: 'Mobility & Balance Training',
     content: {
       intro: 'Many seniors wake up feeling stiff and achy, as if their joints need to be "oiled." Synovial fluid inside our joint capsules is naturally thicker when we are asleep. Gentle, circular movements warm up the fluid, allowing smooth, pain-free gliding throughout the day.',
@@ -330,7 +330,7 @@ const articlesData: Record<string, ArticleData> = {
     readTime: '5 min read',
     date: 'August 08, 2026',
     description: 'Agility drills, animal walks, and posture games that keep kids active and upright in apartment living environments.',
-    leadServiceUrl: '/services/kids-fitness-functional-training',
+    leadServiceUrl: '/fitness-training-for-kids-noida',
     leadServiceText: 'Kids Functional Training',
     content: {
       intro: 'Children today spend more time on screens than ever before. Heavy school bags and slouching over mobile devices can lead to early postural dysfunction and low physical stamina.',
@@ -360,7 +360,7 @@ const articlesData: Record<string, ArticleData> = {
     readTime: '4 min read',
     date: 'August 05, 2026',
     description: 'A minimalist guide to preparing your apartment living room or balcony for comfortable in-home personal training.',
-    leadServiceUrl: '/services/personal-training-at-home',
+    leadServiceUrl: '/in-home-personal-trainer-near-me',
     leadServiceText: 'In-Home Personal Training',
     content: {
       intro: 'You do not need a 500-square-foot dedicated gym room or expensive treadmills to achieve life-changing fitness results at home. All you need is a 6x6 foot clear space.',

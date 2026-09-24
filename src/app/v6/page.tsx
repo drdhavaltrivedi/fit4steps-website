@@ -633,7 +633,7 @@ export default function VariantSixPage() {
                 >
                   <MessageCircle size={18} /> Schedule This Protocol on WhatsApp
                 </a>
-                <Link href="/senior-fitness" className="btn btn-outline">
+                <Link href="/fitness-training-program-for-senior-citizens" className="btn btn-outline">
                   Read Full Clinical Case Studies <ArrowRight size={16} />
                 </Link>
               </div>

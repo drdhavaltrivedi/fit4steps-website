@@ -16,19 +16,25 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Senior Citizen Fitness Training & Knee Pain Therapy at Home | Fit4Steps',
-  description: 'Specialized in-home senior citizen fitness, gentle knee pain rehabilitation, joint restoration, and balance training in Noida, Delhi & Gurugram. Doctor-recommended and 100% injury-free.',
+  title: "Fitness Training Program for Senior Citizens - In-Home Personal Coaching | Fit4Steps",
+  description: "Ranked #1 personal trainer for seniors in home. Certified geriatric fitness coaches delivering gentle strength, joint restoration, knee pain therapy & fall prevention across Delhi, Noida & Gurugram.",
   keywords: [
-    'senior citizen fitness trainer at home delhi',
-    'strength training for seniors gurugram',
-    'knee pain exercises therapy noida',
-    'mobility exercises for senior citizens',
-    'safe exercises for elderly at home',
-    'personal fitness coaching for 50 plus'
+    "fitness training program for senior citizens",
+    "personal trainer for seniors in home",
+    "senior citizen fitness trainer at home delhi",
+    "in home fitness trainer for elderly noida",
+    "strength training for seniors gurugram",
+    "mobility exercises for senior citizens",
+    "geriatric home personal trainer"
   ],
+  alternates: {
+    canonical: "https://fit4steps.com/fitness-training-program-for-senior-citizens",
+  },
 };
 
-export default function SeniorFitnessPage() {
+
+
+export default function FitnessTrainingProgramSeniorCitizensPage() {
   const pillars = [
     {
       id: 'fifty-plus',

@@ -52,31 +52,31 @@ export default function ServicesPage() {
         '@type': 'ListItem',
         position: 1,
         name: 'Senior Citizen Training & Joint Restoration Therapy',
-        url: 'https://fit4steps.com/senior-fitness',
+        url: 'https://fit4steps.com/fitness-training-program-for-senior-citizens',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: '1-on-1 Personal Training at Home',
-        url: 'https://fit4steps.com/services/personal-training-at-home',
+        url: 'https://fit4steps.com/in-home-personal-trainer-near-me',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Certified Female Fitness Trainers',
-        url: 'https://fit4steps.com/services/female-fitness-trainers',
+        url: 'https://fit4steps.com/female-fitness-trainers-in-delhi',
       },
       {
         '@type': 'ListItem',
         position: 4,
         name: 'Couple & Partner Fitness Training',
-        url: 'https://fit4steps.com/services/couple-training',
+        url: 'https://fit4steps.com/couples-fitness-training-at-home-delhi',
       },
       {
         '@type': 'ListItem',
         position: 5,
         name: 'Functional Training for Kids & Teens',
-        url: 'https://fit4steps.com/services/kids-fitness-functional-training',
+        url: 'https://fit4steps.com/fitness-training-for-kids-noida',
       },
       {
         '@type': 'ListItem',
@@ -125,7 +125,7 @@ export default function ServicesPage() {
         'In-home convenience with zero gym travel hazards'
       ],
       image: '/assets/image/senior-joint-therapy.jpg',
-      link: '/senior-fitness',
+      link: '/fitness-training-program-for-senior-citizens',
       linkText: 'Explore Senior Fitness Pillar'
     },
     {
@@ -141,7 +141,7 @@ export default function ServicesPage() {
         'Flexible 6:00 AM to 8:30 PM time slots'
       ],
       image: '/assets/image/h-s3-img.webp',
-      link: '/services/personal-training-at-home',
+      link: '/in-home-personal-trainer-near-me',
       linkText: 'View In-Depth Home Training'
     },
     {
@@ -157,7 +157,7 @@ export default function ServicesPage() {
         'Complete police verification & background clearance'
       ],
       image: '/assets/image/h-s2-servi-card-img-2.webp',
-      link: '/services/female-fitness-trainers',
+      link: '/female-fitness-trainers-in-delhi',
       linkText: 'View Female Trainer Details'
     },
     {
@@ -173,7 +173,7 @@ export default function ServicesPage() {
         'Cost-effective dual training package'
       ],
       image: '/assets/image/h-ban-img.webp',
-      link: '/services/couple-training',
+      link: '/couples-fitness-training-at-home-delhi',
       linkText: 'View Couple Training Plan'
     },
     {
@@ -189,7 +189,7 @@ export default function ServicesPage() {
         'Conducted safely in home gardens, terraces or living rooms'
       ],
       image: '/assets/image/h-s2-servi-card-img-4.webp',
-      link: '/services/kids-fitness-functional-training',
+      link: '/fitness-training-for-kids-noida',
       linkText: 'View Kids Program Details'
     },
     {
@@ -406,10 +406,10 @@ export default function ServicesPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '16px', textAlign: 'left', marginBottom: '36px' }}>
             {[
-              { title: 'Training for Adults 50+', link: '/senior-fitness/fifty-plus', desc: 'Sarcopenia defense & bone density strengthening.' },
-              { title: 'Senior Strength Training', link: '/senior-fitness/strength-seniors', desc: 'Progressive bodyweight & light resistance bands.' },
+              { title: 'Training for Adults 50+', link: '/personal-fitness-training-for-50-plus', desc: 'Sarcopenia defense & bone density strengthening.' },
+              { title: 'Senior Strength Training', link: '/strength-training-for-seniors-at-home-delhi', desc: 'Progressive bodyweight & light resistance bands.' },
               { title: 'Knee Pain & Joint Therapy', link: '/senior-fitness/knee-therapy', desc: 'Non-invasive synovial fluid circulation & relief.' },
-              { title: 'Mobility & Fall Prevention', link: '/senior-fitness/mobility-balance', desc: 'Proprioception drills & walking stability.' }
+              { title: 'Mobility & Fall Prevention', link: '/mobility-exercises-for-senior-citizens', desc: 'Proprioception drills & walking stability.' }
             ].map((sub, i) => (
               <Link key={i} href={sub.link} className="card-clean" style={{ padding: '20px', borderRadius: '14px', textDecoration: 'none' }}>
                 <h3 style={{ fontSize: '16px', fontWeight: 800, color: 'var(--text-main)', marginBottom: '6px' }}>{sub.title}</h3>
@@ -421,7 +421,7 @@ export default function ServicesPage() {
             ))}
           </div>
 
-          <Link href="/senior-fitness" className="btn btn-gold" style={{ padding: '14px 32px', fontSize: '15px' }}>
+          <Link href="/fitness-training-program-for-senior-citizens" className="btn btn-gold" style={{ padding: '14px 32px', fontSize: '15px' }}>
             Explore All Senior Citizen Programs
           </Link>
         </div>

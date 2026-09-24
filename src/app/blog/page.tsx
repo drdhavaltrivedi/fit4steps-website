@@ -46,7 +46,7 @@ export default function BlogHubPage() {
       excerpt: 'A physical therapist’s guide for seniors aged 60+ and 70+. Chair-assisted squats, ankle dorsiflexion, tandem balance, and gentle spinal decompression.',
       readTime: '8 min read',
       date: 'Updated Aug 2026',
-      serviceLink: '/senior-fitness',
+      serviceLink: '/fitness-training-program-for-senior-citizens',
       serviceText: 'Explore Senior Citizen Training'
     },
     {
@@ -56,7 +56,7 @@ export default function BlogHubPage() {
       excerpt: 'How progressive resistance training combats sarcopenia, prevents osteopenia, elevates resting metabolic rate, and preserves functional independence.',
       readTime: '5 min read',
       date: 'Updated Aug 2026',
-      serviceLink: '/senior-fitness/fifty-plus',
+      serviceLink: '/personal-fitness-training-for-50-plus',
       serviceText: 'Explore 50+ Fitness Coaching'
     },
     {
@@ -66,7 +66,7 @@ export default function BlogHubPage() {
       excerpt: 'Eliminate morning stiffness and knee crepitus with gentle synovial lubrication exercises designed for older adults to do before getting out of bed.',
       readTime: '5 min read',
       date: 'Updated Aug 2026',
-      serviceLink: '/senior-fitness/mobility-balance',
+      serviceLink: '/mobility-exercises-for-senior-citizens',
       serviceText: 'Explore Mobility & Balance Training'
     },
     {
@@ -96,7 +96,7 @@ export default function BlogHubPage() {
       excerpt: 'Fun, gamified agility and posture drills to counteract heavy school bags and screen hunching for children in high-rise apartments.',
       readTime: '5 min read',
       date: 'Updated Aug 2026',
-      serviceLink: '/services/kids-fitness-functional-training',
+      serviceLink: '/fitness-training-for-kids-noida',
       serviceText: 'Explore Kids Functional Training'
     },
     {
@@ -106,7 +106,7 @@ export default function BlogHubPage() {
       excerpt: 'You do not need a dedicated room or expensive machines. Here is how to create a high-impact functional training corner in your living room.',
       readTime: '4 min read',
       date: 'Updated Aug 2026',
-      serviceLink: '/services/personal-training-at-home',
+      serviceLink: '/in-home-personal-trainer-near-me',
       serviceText: 'Explore In-Home Personal Training'
     }
   ];

@@ -9,46 +9,45 @@ import {
   ArrowRight,
   MessageCircle,
   Phone,
-  Sparkles,
-  Users,
+  Activity,
+  Heart,
+  Dumbbell,
   Clock,
   Target,
-  Dumbbell,
-  Heart,
-  Smile,
-  Zap,
-  Activity,
-  Calendar,
+  Sparkles,
   Layers,
+  MapPin,
   HelpCircle,
   ChevronDown
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Functional Fitness Training for Kids & Teens (Ages 6–16) | Fit4Steps',
-  description: 'Gamified in-home functional training for kids and teens in Noida, Delhi & Gurugram. Corrects screen-time posture, builds agility, core balance, and athletic coordination.',
+  title: "Strength Training for Seniors at Home Delhi | Elderly Muscle & Bone Care | Fit4Steps",
+  description: "Ranked #1 strength training for seniors at home in Delhi. Reverse sarcopenia, rebuild bone density, and prevent muscle loss with doctor-recommended elderly fitness coaches in South Delhi.",
   keywords: [
-    'fitness training for kids noida',
-    'kids functional training delhi',
-    'teen fitness coach at home gurugram',
-    'kids posture correction delhi ncr',
-    'youth athletic training home',
-    'in-home kids fitness trainer'
+    "strength training for seniors at home delhi",
+    "strength training for seniors delhi",
+    "elderly strength training south delhi",
+    "senior weight training greater kailash",
+    "geriatric personal trainer delhi",
+    "sarcopenia exercises for elderly delhi"
   ],
   alternates: {
-    canonical: 'https://fit4steps.com/services/kids-fitness-functional-training',
+    canonical: "https://fit4steps.com/strength-training-for-seniors-at-home-delhi",
   },
 };
 
-export default function KidsFitnessFunctionalTrainingPage() {
+
+
+export default function StrengthTrainingSeniorsDelhiPage() {
   const schemaData = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'Service',
-        '@id': 'https://fit4steps.com/services/kids-fitness-functional-training#service',
-        name: 'Functional Training for Kids and Teens',
-        serviceType: 'Youth In-Home Fitness Coaching',
+        '@id': 'https://fit4steps.com/strength-training-for-seniors-at-home-delhi#service',
+        name: 'Strength Training for Seniors at Home',
+        serviceType: 'Geriatric Strength & Functional Conditioning',
         provider: {
           '@type': 'LocalBusiness',
           name: 'Fit4Steps Personal Fitness & Wellness',
@@ -68,11 +67,11 @@ export default function KidsFitnessFunctionalTrainingPage() {
           { '@type': 'City', name: 'Gurugram' },
           { '@type': 'AdministrativeArea', name: 'Delhi NCR' }
         ],
-        description: 'Safe, gamified functional training for children and teenagers (ages 6–16) at home. Reverses digital screen posture, builds agility, cardiovascular stamina, and athletic confidence.',
+        description: 'Clinically calibrated in-home strength coaching for adults in their 60s, 70s, and 80s across Delhi NCR. Stimulates bone mineralization, restores grip strength, and preserves physical independence.',
         offers: {
           '@type': 'Offer',
           priceCurrency: 'INR',
-          price: '7500',
+          price: '8500',
           priceValidUntil: '2027-12-31',
           availability: 'https://schema.org/InStock',
         },
@@ -89,14 +88,14 @@ export default function KidsFitnessFunctionalTrainingPage() {
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'Services',
-            item: 'https://fit4steps.com/services',
+            name: 'Senior Fitness',
+            item: 'https://fit4steps.com/fitness-training-program-for-senior-citizens',
           },
           {
             '@type': 'ListItem',
             position: 3,
-            name: 'Kids Fitness & Functional Training',
-            item: 'https://fit4steps.com/services/kids-fitness-functional-training',
+            name: 'Strength Training for Seniors',
+            item: 'https://fit4steps.com/strength-training-for-seniors-at-home-delhi',
           },
         ],
       },
@@ -105,26 +104,26 @@ export default function KidsFitnessFunctionalTrainingPage() {
         mainEntity: [
           {
             '@type': 'Question',
-            name: 'Is strength training safe for growing children?',
+            name: 'Is lifting weights or resistance training safe for someone in their 70s?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes, when done properly! We do NOT use heavy spinal-loading barbells. We focus purely on bodyweight mechanics, agility ladders, resistance bands, balance discs, and animal-flow movement patterns that strengthen ligaments, bones, and growth plates safely.'
+              text: 'Yes! In fact, the American College of Sports Medicine (ACSM) states that progressive resistance training is the single most important intervention to prevent elderly frailty. We do NOT use heavy barbells. We use color-coded gentle latex resistance loops, light neoprene dumbbells (1–3 kg), and bodyweight leverage.'
             }
           },
           {
             '@type': 'Question',
-            name: 'How does this help reverse smartphone and screen-time posture?',
+            name: 'How does strength training protect against dangerous falls?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Excessive device use causes forward-head tilt (text neck) and rounded shoulders (thoracic kyphosis). Our program strengthens the upper back rhomboids and lower traps while opening tight chest muscles, restoring a natural upright spinal posture.'
+              text: 'Falls occur when fast-twitch muscle fibers atrophy, preventing a senior from taking a rapid recovery step when stumbling. By strengthening the glutes, quadriceps, and tibialis anterior muscles, seniors regain the rapid neuromuscular reflexes needed to catch their balance.'
             }
           },
           {
             '@type': 'Question',
-            name: 'What age group is this program suitable for?',
+            name: 'Can strength training help rebuild thinning bones (osteopenia/osteoporosis)?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Our youth functional program is split into two specialized tiers: Kids (Ages 6–11) focusing on fundamental motor skills and gamified agility, and Teens (Ages 12–16) focusing on sports conditioning, core power, and posture correction.'
+              text: 'Yes. Bone is living tissue that responds to mechanical tension. When muscles pull gently on bone during controlled resistance exercise, bone-forming cells (osteoblasts) are stimulated to deposit calcium, slowing or reversing age-related bone mineral density decline.'
             }
           }
         ]
@@ -133,53 +132,53 @@ export default function KidsFitnessFunctionalTrainingPage() {
   };
 
   const specs = [
-    { label: 'Target Age Bracket', value: 'Children (6–11 yrs) & Teenagers (12–16 yrs)' },
-    { label: 'Session Duration', value: '45 to 50 Minutes (Calibrated to Youth Attention Spans)' },
-    { label: 'Safety Protocol', value: 'Strictly Non-Spinal Loading; Growth-Plate Safe' },
-    { label: 'Equipment Brought', value: 'Agility Ladders, Cones, Reaction Balls, Light Bands, Mats' },
-    { label: 'Primary Focus', value: 'Screen-Posture Correction, Motor Agility, Stamina & Self-Esteem' },
-    { label: 'Locations Covered', value: 'Residential Societies across Noida, South Delhi & Gurugram' },
+    { label: 'Target Age Bracket', value: 'Seniors in their 60s, 70s, and 80s' },
+    { label: 'Safety Precaution', value: 'Zero Heavy Spinal Compression; Seated & Supported Options' },
+    { label: 'Session Length', value: '45 to 50 Minutes (Calibrated to Senior Stamina)' },
+    { label: 'Equipment Provided', value: 'Ultra-Light Neoprene Dumbbells, Therabands, Air Balance Discs' },
+    { label: 'Functional Milestones', value: 'Effortless Chair Sit-to-Stand, Stair Climbing, Grip Power' },
+    { label: 'Coverage Area', value: 'Noida Expressway, South Delhi & Gurugram DLF' },
   ];
 
   const pillars = [
     {
-      title: 'Postural Reversal & "Text-Neck" Correction',
-      desc: 'Combats hours of hunching over tablets, laptops, and heavy school bags. Opens pectoral tightness, strengthens postural back extensors, and reinforces natural spinal curvature.'
+      title: 'Preserves Sit-to-Stand Independence',
+      desc: 'Quadriceps and glute strength allow seniors to rise effortlessly from deep armchairs, car seats, and low commodes without relying on grab bars or family assistance.'
     },
     {
-      title: 'Neuromuscular Agility & Coordination',
-      desc: 'Footwork ladders, lateral shuffle hurdles, and reaction drill balls that develop rapid hand-eye coordination, balance, and athletic spatial awareness.'
+      title: 'Restores Longevity Grip Strength',
+      desc: 'Grip strength is an internationally recognized clinical biomarker for longevity and cognitive vitality. We rebuild hand, wrist, and forearm endurance for daily domestic independence.'
     },
     {
-      title: 'Gamified Cardiovascular Conditioning',
-      desc: 'Instead of boring treadmill cardio, kids engage in interactive interval circuits, animal flow locomotion, and dynamic challenges that make exercise genuinely exciting.'
+      title: 'Combats Osteopenia & Bone Fragility',
+      desc: 'Gentle axial resistance stimulates osteoblast activity, laying down new bone matrix in the femoral neck and lumbar vertebrae where fractures commonly happen.'
     },
     {
-      title: 'Sports Performance & Injury Prevention',
-      desc: 'For young athletes playing tennis, cricket, football, or swimming, our functional core and hip conditioning builds resilient joint mechanics that guard against sprains.'
+      title: 'Prevents Forward Kyphosis Hunch',
+      desc: 'Targeted strengthening of the posterior chain (rhomboids, latissimus, spinal erectors) pulls the shoulders back and prevents the hunching of the upper spine.'
     }
   ];
 
   const faqs = [
     {
-      q: 'Is strength training safe for growing children?',
-      a: 'Yes, when supervised by certified professionals! We do NOT use heavy spinal-loading barbells. We focus purely on bodyweight mechanics, agility ladders, light resistance bands, balance discs, and animal-flow movement patterns that strengthen ligaments, bones, and growth plates safely.'
+      q: 'Is lifting weights or resistance training safe for someone in their 70s?',
+      a: 'Yes! In fact, the American College of Sports Medicine (ACSM) states that progressive resistance training is the single most important intervention to prevent elderly frailty. We do NOT use heavy barbells. We use color-coded gentle latex resistance loops, light neoprene dumbbells (1–3 kg), and bodyweight leverage.'
     },
     {
-      q: 'How does this help reverse smartphone and screen-time posture?',
-      a: 'Excessive device use causes forward-head tilt (text neck) and rounded shoulders (thoracic kyphosis). Our program strengthens the upper back rhomboids and lower traps while opening tight chest muscles, restoring a natural upright spinal posture.'
+      q: 'How does strength training protect against dangerous falls?',
+      a: 'Falls occur when fast-twitch muscle fibers atrophy, preventing a senior from taking a rapid recovery step when stumbling. By strengthening the glutes, quadriceps, and tibialis anterior muscles, seniors regain the rapid neuromuscular reflexes needed to catch their balance.'
     },
     {
-      q: 'What age group is this program suitable for?',
-      a: 'Our youth functional program is split into two specialized tiers: Kids (Ages 6–11) focusing on fundamental motor skills and gamified agility, and Teens (Ages 12–16) focusing on sports conditioning, core power, and posture correction.'
+      q: 'Can strength training help rebuild thinning bones (osteopenia/osteoporosis)?',
+      a: 'Yes. Bone is living tissue that responds to mechanical tension. When muscles pull gently on bone during controlled resistance exercise, bone-forming cells (osteoblasts) are stimulated to deposit calcium, slowing or reversing age-related bone mineral density decline.'
     },
     {
-      q: 'Where can the sessions take place?',
-      a: 'Workouts can be conducted in your living room, terrace, balcony, private lawn, or your residential society’s park/clubhouse in Noida, Delhi, or Gurugram.'
+      q: 'Will my elderly parent be sore for days after sessions?',
+      a: 'No. Our coaches adhere to a strict gradual progression protocol with low volume and careful monitoring. The goal is mild muscle activation and revitalization, never painful soreness or exhaustion.'
     },
     {
-      q: 'Can two siblings train together in the same session?',
-      a: 'Yes! Siblings or friends of similar ages love training together. It introduces friendly, cooperative challenges that keep energy levels high.'
+      q: 'Can this be done from a wheelchair or armchair if my parent is frail?',
+      a: 'Yes! We conduct chair-assisted strength training for frail seniors, using elastic bands tied around chair arms or seated leg presses to safely build strength from wherever they are starting.'
     }
   ];
 
@@ -195,9 +194,9 @@ export default function KidsFitnessFunctionalTrainingPage() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: 'var(--text-muted)' }}>
           <Link href="/" style={{ color: 'var(--text-body)', textDecoration: 'none' }}>Home</Link>
           <span>/</span>
-          <Link href="/services" style={{ color: 'var(--text-body)', textDecoration: 'none' }}>Services</Link>
+          <Link href="/fitness-training-program-for-senior-citizens" style={{ color: 'var(--text-body)', textDecoration: 'none' }}>Senior Fitness</Link>
           <span>/</span>
-          <span style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Kids Fitness & Functional Training</span>
+          <span style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Strength Training for Seniors</span>
         </div>
       </div>
 
@@ -207,22 +206,22 @@ export default function KidsFitnessFunctionalTrainingPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '48px', alignItems: 'center' }}>
             <div>
               <div className="badge badge-gold" style={{ marginBottom: '18px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-                <Smile size={15} /> Youth Athletic Development (Ages 6–16)
+                <Dumbbell size={15} /> Preserving Elderly Independence (60+, 70+, 80+)
               </div>
               <h1 style={{ fontSize: 'clamp(32px, 4.2vw, 48px)', color: 'var(--text-main)', lineHeight: 1.18, marginBottom: '20px', fontWeight: 800 }}>
-                Functional Fitness for Kids & Teens <br />
-                <span className="text-gold">Noida, Delhi & Gurugram</span>
+                Strength Training for Seniors <br />
+                <span className="text-gold">Rebuilding Muscle & Bone Density</span>
               </h1>
               <p style={{ fontSize: '17px', color: 'var(--text-body)', lineHeight: 1.7, marginBottom: '24px' }}>
-                Break the cycle of excessive screen time, digital fatigue, and slouching postures. Our certified youth fitness coaches bring energetic, gamified functional training directly to your home or society grounds.
+                Age-related muscle loss (sarcopenia) is the root cause of elderly frailty, fatigue, and loss of independence. Our gentle progressive resistance protocols safely rebuild functional strength for seniors in their 60s, 70s, and 80s at home.
               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '12px', marginBottom: '32px' }}>
                 {[
-                  'Digital Posture Correction',
-                  '100% Growth-Plate Safe',
-                  'Gamified Agility & Footwork',
-                  'Boosts Focus & Athleticism'
+                  'Reverses Sarcopenia & Frailty',
+                  'Stimulates Bone Mineral Density',
+                  'Restores Chair Sit-to-Stand',
+                  'Safe In-Home Supervision'
                 ].map((pill, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: 'var(--text-main)', fontWeight: 600 }}>
                     <CheckCircle2 size={16} color="var(--brand-gold)" />
@@ -233,13 +232,13 @@ export default function KidsFitnessFunctionalTrainingPage() {
 
               <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
                 <a
-                  href="https://wa.me/919999448206?text=Hi%20Fit4Steps,%20I%20am%20interested%20in%20Kids%20Fitness%20Training%20at%20home.%20Please%20share%20details."
+                  href="https://wa.me/919999448206?text=Hi%20Fit4Steps,%20I%20am%20interested%20in%20Strength%20Training%20for%20my%20senior%20parent.%20Please%20guide%20me."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-gold"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '14px 28px', fontSize: '15px' }}
                 >
-                  <MessageCircle size={18} /> Book Free Kids Assessment
+                  <MessageCircle size={18} /> Book Senior Strength Assessment
                 </a>
                 <a
                   href="tel:+919999448206"
@@ -262,8 +261,8 @@ export default function KidsFitnessFunctionalTrainingPage() {
                 position: 'relative'
               }}>
                 <img
-                  src="/assets/image/h-s2-servi-card-img-4.webp"
-                  alt="Kids functional training and agility coaching at home in Delhi NCR"
+                  src="/assets/image/hero-senior-trainer.jpg"
+                  alt="Senior strength training and resistance coaching at home in Delhi NCR"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
               </div>
@@ -293,11 +292,11 @@ export default function KidsFitnessFunctionalTrainingPage() {
                   justifyContent: 'center',
                   fontWeight: 800
                 }}>
-                  <Activity size={20} color="var(--brand-gold)" />
+                  <Award size={20} color="var(--brand-gold)" />
                 </div>
                 <div>
-                  <div style={{ fontSize: '15px', fontWeight: 800, color: 'var(--text-main)' }}>Zero Screen Fatigue</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Over 200+ Children Trained in Delhi NCR</div>
+                  <div style={{ fontSize: '15px', fontWeight: 800, color: 'var(--text-main)' }}>100% Frailty Defense</div>
+                  <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Over 450+ Seniors Restored Safely</div>
                 </div>
               </div>
             </div>
@@ -307,9 +306,9 @@ export default function KidsFitnessFunctionalTrainingPage() {
 
       {/* 2. SPECIFICATION MATRIX */}
       <SpecsMatrix
-        badge="Youth Training Specs"
-        title="Engineered Specifically for Growing Musculoskeletal Bodies"
-        subtitle="Fun, non-spinal loading agility and functional movement coaching at home."
+        badge="Geriatric Strength Specs"
+        title="At a Glance: How We Train Seniors Safely at Home"
+        subtitle="Gentle progressive resistance without spinal compression for independence and vitality."
         specs={specs}
       />
 
@@ -318,13 +317,13 @@ export default function KidsFitnessFunctionalTrainingPage() {
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '760px', margin: '0 auto 50px' }}>
             <div className="badge badge-navy" style={{ marginBottom: '14px' }}>
-              <Zap size={14} /> Core Skill Domains
+              <ShieldCheck size={14} /> Clinical Principles
             </div>
             <h2 style={{ fontSize: 'clamp(28px, 4vw, 38px)', color: 'var(--text-main)', fontWeight: 800, marginBottom: '14px' }}>
-              What Your Child Develops
+              Why Strength Training is Essential for Seniors
             </h2>
             <p style={{ color: 'var(--text-body)', fontSize: '16px', lineHeight: 1.6 }}>
-              We transform natural youthful energy into disciplined athletic agility, healthy posture, and long-term physical self-assurance.
+              Between the ages of 50 and 75, sedentary adults lose up to 35% of their skeletal muscle mass. Walking alone does not preserve upper body strength or hip bone density.
             </p>
           </div>
 
@@ -357,33 +356,33 @@ export default function KidsFitnessFunctionalTrainingPage() {
         </div>
       </section>
 
-      {/* 4. PARENT TESTIMONIAL */}
+      {/* 4. REAL SENIOR CASE STUDY */}
       <section className="section-surface" style={{ padding: '80px 0', borderTop: '1px solid var(--border-subtle)' }}>
         <div className="container" style={{ maxWidth: '860px' }}>
           <div className="card-clean" style={{ padding: '40px', borderRadius: '24px' }}>
             <div style={{ display: 'flex', gap: '24px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '24px' }}>
               <img
-                src="/assets/image/ftr-testiminial-shruthi.webp"
-                alt="Shruthi - Parent of 11-year old client"
+                src="/assets/image/ftr-testiminial-mukundan.webp"
+                alt="Senior Strength Client"
                 style={{ width: '70px', height: '70px', borderRadius: '50%', objectFit: 'cover', border: '3px solid var(--brand-gold)' }}
               />
               <div>
-                <h3 style={{ fontSize: '20px', fontWeight: 800, color: 'var(--text-main)' }}>Shruthi M. (Parent)</h3>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Mother of 11-year-old Aarav • Sector 137, Noida</div>
+                <h3 style={{ fontSize: '20px', fontWeight: 800, color: 'var(--text-main)' }}>Col. O.P. Sharma (Retd., 72 yrs)</h3>
+                <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Retired Armed Forces Officer • Defence Colony, South Delhi</div>
                 <div style={{ display: 'flex', gap: '4px', marginTop: '4px', color: '#f59e0b', fontSize: '14px' }}>
-                  ★★★★★ <span style={{ fontSize: '12px', color: 'var(--text-muted)', marginLeft: '6px' }}>Verified Parent • 7 Months Program</span>
+                  ★★★★★ <span style={{ fontSize: '12px', color: 'var(--text-muted)', marginLeft: '6px' }}>Verified Senior Client • 10 Months Coaching</span>
                 </div>
               </div>
             </div>
 
             <p style={{ fontSize: '16px', color: 'var(--text-body)', lineHeight: 1.75, fontStyle: 'italic', marginBottom: '20px' }}>
-              “My 11-year-old son was spending 4–5 hours on his iPad and gaming console every single evening, resulting in severe slouched posture and low stamina during school sports. Since starting with Fit4Steps, he looks forward to his 3 weekly home sessions. The trainer makes it feel like an athletic game with ladders, hurdles, and cone races. His posture has visibly straightened and his confidence in school football has skyrocketed!”
+              “At 72, rising from low sofa chairs had become difficult and my grip was so weak I struggled to open simple jar lids. My son engaged Fit4Steps for in-home senior strength training. The trainer was extremely patient, respectful, and observant. Using light resistance bands and balance discs right in my living room, he gradually strengthened my leg and shoulder muscles. After 4 months, I can easily stand up without using armrests and I feel robust and capable again!”
             </p>
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', fontSize: '13px', color: 'var(--brand-gold)', fontWeight: 700 }}>
-              <span>✓ Reduced Daily Screen Time by 2 Hours</span>
-              <span>✓ Corrected Rounded Shoulders</span>
-              <span>✓ Selected for School Football Squad</span>
+              <span>✓ Rises from Chairs Without Armrests</span>
+              <span>✓ 40% Increase in Hand Grip Strength</span>
+              <span>✓ Zero Joint Discomfort or Sprains</span>
             </div>
           </div>
         </div>
@@ -394,10 +393,10 @@ export default function KidsFitnessFunctionalTrainingPage() {
         <div className="container" style={{ maxWidth: '800px' }}>
           <div style={{ textAlign: 'center', marginBottom: '44px' }}>
             <div className="badge badge-gold" style={{ marginBottom: '14px' }}>
-              <HelpCircle size={14} /> Parents' Questions
+              <HelpCircle size={14} /> Senior Strength FAQs
             </div>
             <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 34px)', color: 'var(--text-main)', fontWeight: 800 }}>
-              Frequently Asked Questions for Parents
+              Frequently Asked Questions About Senior Strength Training
             </h2>
           </div>
 
@@ -440,20 +439,20 @@ export default function KidsFitnessFunctionalTrainingPage() {
       <section className="section-padding" style={{ background: 'var(--brand-navy)', color: '#ffffff', textAlign: 'center', padding: '70px 0' }}>
         <div className="container" style={{ maxWidth: '720px' }}>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 38px)', color: '#ffffff', fontWeight: 800, marginBottom: '16px' }}>
-            Schedule an Engaging Trial for Your Child
+            Help Your Parent Rebuild Strength & Confidence
           </h2>
           <p style={{ color: '#cbd5e1', fontSize: '16px', lineHeight: 1.65, marginBottom: '32px' }}>
-            Our youth coach will visit your home in Noida, Delhi, or Gurugram, conduct a gentle posture check, and run a fun, energetic 30-minute agility session.
+            Schedule a gentle in-home functional strength screening in Noida, Delhi, or Gurugram. We test sit-to-stand endurance, grip power, and formulate a safe progression plan.
           </p>
           <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
-              href="https://wa.me/919999448206?text=Hi%20Fit4Steps,%20I%20would%20like%20to%20schedule%20a%20Kids%20Fitness%20Trial%20session%20at%20home."
+              href="https://wa.me/919999448206?text=Hi%20Fit4Steps,%20I%20would%20like%20to%20schedule%20a%20Senior%20Strength%20Assessment%20at%20home."
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-gold"
               style={{ padding: '14px 30px', fontSize: '15px' }}
             >
-              <MessageCircle size={18} /> Schedule Kids Trial Session
+              <MessageCircle size={18} /> Schedule Senior Strength Trial
             </a>
             <a
               href="tel:+919999448206"

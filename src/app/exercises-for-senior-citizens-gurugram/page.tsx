@@ -3,53 +3,51 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import SpecsMatrix from '@/components/SpecsMatrix';
 import {
-  Award,
   ShieldCheck,
   CheckCircle2,
   ArrowRight,
   MessageCircle,
   Phone,
+  Activity,
+  Award,
   Heart,
   Clock,
-  Users,
   Target,
-  Dumbbell,
   Sparkles,
-  Calendar,
   Layers,
   MapPin,
   HelpCircle,
   ChevronDown,
-  UserCheck,
-  Lock
+  Compass
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Certified Female Fitness Trainers at Home in Delhi, Noida & Gurugram | Fit4Steps',
-  description: 'Book certified lady fitness trainers at home in Delhi NCR. Specialized in women’s fat loss, PCOS/PCOD management, postnatal recovery, pelvic floor toning, and senior women fitness.',
+  title: "Senior Citizens Exercises Gurugram - Safe In-Home Elderly Workouts | Fit4Steps",
+  description: "Ranked #4 senior citizens exercises in Gurugram. Safe, doctor-guided mobility, chair balance, fall prevention & joint preservation exercises for elderly parents across DLF & Golf Course Road.",
   keywords: [
-    'female fitness trainers in delhi',
-    'lady fitness trainer at home noida',
-    'female personal trainer gurugram',
-    'women personal trainer at home delhi ncr',
-    'pcos fitness trainer at home',
-    'postnatal lady trainer south delhi',
-    'home workout female coach'
+    "senior citizens exercises gurugram",
+    "elderly exercises gurgaon",
+    "mobility exercises for senior citizens gurugram",
+    "fall prevention exercises for seniors gurgaon",
+    "chair exercises for elderly gurugram",
+    "senior citizen fitness trainer at home gurugram"
   ],
   alternates: {
-    canonical: 'https://fit4steps.com/services/female-fitness-trainers',
+    canonical: "https://fit4steps.com/exercises-for-senior-citizens-gurugram",
   },
 };
 
-export default function FemaleFitnessTrainersPage() {
+
+
+export default function MobilityBalancePage() {
   const schemaData = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'Service',
-        '@id': 'https://fit4steps.com/services/female-fitness-trainers#service',
-        name: 'Certified Female Fitness Trainers at Home',
-        serviceType: 'Women In-Home Personal Fitness Coaching',
+        '@id': 'https://fit4steps.com/exercises-for-senior-citizens-gurugram#service',
+        name: 'Senior Mobility & Balance Training (Fall Prevention)',
+        serviceType: 'Geriatric Balance & Fall Prevention Rehabilitation',
         provider: {
           '@type': 'LocalBusiness',
           name: 'Fit4Steps Personal Fitness & Wellness',
@@ -69,11 +67,11 @@ export default function FemaleFitnessTrainersPage() {
           { '@type': 'City', name: 'Gurugram' },
           { '@type': 'AdministrativeArea', name: 'Delhi NCR' }
         ],
-        description: 'Elite certified female fitness trainers delivering private doorstep coaching for women across Delhi NCR. Specialized in PCOS, core toning, postnatal recovery, and joint mobility.',
+        description: 'Specialized in-home balance restoration and fall prevention coaching for seniors across Delhi NCR. Retrains foot proprioception, vestibular coordination, and eliminates the shuffling gait.',
         offers: {
           '@type': 'Offer',
           priceCurrency: 'INR',
-          price: '8500',
+          price: '8000',
           priceValidUntil: '2027-12-31',
           availability: 'https://schema.org/InStock',
         },
@@ -90,14 +88,14 @@ export default function FemaleFitnessTrainersPage() {
           {
             '@type': 'ListItem',
             position: 2,
-            name: 'Services',
-            item: 'https://fit4steps.com/services',
+            name: 'Senior Fitness',
+            item: 'https://fit4steps.com/fitness-training-program-for-senior-citizens',
           },
           {
             '@type': 'ListItem',
             position: 3,
-            name: 'Female Fitness Trainers',
-            item: 'https://fit4steps.com/services/female-fitness-trainers',
+            name: 'Mobility & Balance Training',
+            item: 'https://fit4steps.com/exercises-for-senior-citizens-gurugram',
           },
         ],
       },
@@ -106,34 +104,26 @@ export default function FemaleFitnessTrainersPage() {
         mainEntity: [
           {
             '@type': 'Question',
-            name: 'Why should women choose a certified female personal trainer at home?',
+            name: 'Why is fall prevention the most urgent fitness priority for senior citizens?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'A certified female trainer understands female physiology, hormonal cycles, PCOS/PCOD challenges, and pelvic floor changes firsthand. Furthermore, training in your living room affords 100% privacy without the self-consciousness or crowded gaze often felt in public commercial gym weight rooms.'
+              text: 'According to geriatric medical research, 1 in 3 adults over the age of 65 experiences a fall each year, with hip fractures leading to severe immobility. Regaining balance reflexes and strengthening ankle stabilizers eliminates over 75% of domestic trip-and-fall hazards.'
             }
           },
           {
             '@type': 'Question',
-            name: 'Are Fit4Steps lady trainers verified and certified?',
+            name: 'What causes the common elderly "shuffling gait"?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. 100% of our female fitness coaches possess recognized national/international sports conditioning certifications (ACE, ACSM, K11, or Yoga Alliance) and undergo mandatory government police and identity verification.'
+              text: 'A shuffling walk is primarily caused by weakness in the tibialis anterior muscle (leading to foot drop) and tight hip flexors. Seniors drag their feet rather than lifting their toes, making them prone to catching rugs or doorway thresholds. Our drills specifically strengthen ankle dorsiflexion and hip extension.'
             }
           },
           {
             '@type': 'Question',
-            name: 'Can you help with PCOS, thyroid conditions, and hormonal weight gain?',
+            name: 'How do you ensure my parent will not fall during balance training?',
             acceptedAnswer: {
               '@type': 'Answer',
-              text: 'Yes. Our female trainers specialize in endocrine-sensitive exercise protocols that combine resistance training to improve insulin sensitivity with restorative breathwork to reduce cortisol, which directly helps regulate menstrual regularity and accelerate visceral fat loss.'
-            }
-          },
-          {
-            '@type': 'Question',
-            name: 'Is this service suitable for senior women (50+ and 60+)?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Absolutely. Many of our senior female clients in Noida, Delhi, and Gurugram train with lady coaches who focus on osteopenia prevention, knee joint cartilage care, gentle spinal flexibility, and fall prevention.'
+              text: 'Safety is paramount. All balance exercises are conducted within arm’s reach of a stable chair or sturdy wall, with our certified trainer spotting the senior with a protective gait stance at all times. We never push past safe neurological limits.'
             }
           }
         ]
@@ -142,57 +132,53 @@ export default function FemaleFitnessTrainersPage() {
   };
 
   const specs = [
-    { label: 'Trainer Profile', value: '100% Certified Female Fitness Coaches & Yoga Therapists' },
-    { label: 'Session Length', value: '55 to 60 Minutes per Private Session' },
-    { label: 'Specializations', value: 'PCOS/PCOD, Postnatal Recovery, Core Toning, Senior Women Mobility' },
-    { label: 'Equipment Included', value: 'Color-Coded Resistance Tubes, Light Weights, Yoga Mats, Pilates Balls' },
-    { label: 'Privacy & Security', value: 'Police-Verified, Direct Doorstep Service, Complete Confidentiality' },
-    { label: 'Service Coverage', value: 'All Major Sectors in Noida, South Delhi Colonies & Gurugram DLF' },
+    { label: 'Clinical Outcome', value: 'Over 75% Fall Risk Reduction & Shuffling Gait Elimination' },
+    { label: 'Neurological Target', value: 'Vestibular System, Visual Horizon & Foot Proprioceptors' },
+    { label: 'Screening Baseline', value: 'Berg Balance Scale & Timed Up-and-Go (TUG) Mobility Audit' },
+    { label: 'Session Length', value: '45 to 50 Minutes with Full Trainer Spotting & Support' },
+    { label: 'Equipment Used', value: 'Air Balance Discs, Agility Step Markers, Gait Belts & Soft Foam Pads' },
+    { label: 'Coverage Area', value: 'Noida Expressway, South Delhi & Gurugram DLF / Golf Course' },
   ];
 
   const pillars = [
     {
-      title: 'PCOS & Hormonal Equilibrium',
-      desc: 'High cortisol and insulin resistance in PCOS make traditional high-intensity cardio counterproductive. Our structured resistance workouts enhance glucose uptake into skeletal muscles without spiking stress hormones.'
+      title: 'Single-Leg Proprioceptive Stability',
+      desc: 'Walking is simply moving from one single-leg stand to another. We train the micro-stabilizing muscles of the ankle and hip abductors so every step lands firmly without sideways wobble.'
     },
     {
-      title: 'Postnatal & Diastasis Recti Recovery',
-      desc: 'Safe re-activation of the deep transverse abdominis and pelvic floor musculature after vaginal or C-section delivery. Eliminates lower back pain and heals abdominal separation.'
+      title: 'Ankle Dorsiflexion & Anti-Shuffling Gait',
+      desc: 'Strengthening the anterior tibialis muscle allows seniors to clear their toes effortlessly over rugs, door sills, and uneven pavements, completely eliminating the tripping hazard.'
     },
     {
-      title: 'Targeted Core, Glute & Hip Toning',
-      desc: 'Corrective strength patterns using resistance loops and kettlebells to build firm, functional glutes, sculpt the midsection, and protect the lumbar spine.'
+      title: 'Vestibular & Visual Horizon Coordination',
+      desc: 'Integrating gentle head-turning drills while maintaining a fixed stance retrains the inner ear balance canals, preventing dizziness and disorientation when looking around.'
     },
     {
-      title: 'Bone Density & Osteopenia Defense',
-      desc: 'Post-menopausal estrogen decline accelerates bone mass loss. Our weight-bearing resistance drills stimulate osteoblast activity, strengthening hip and spine bone mineral density.'
+      title: 'Reactive Recovery Step Training',
+      desc: 'Simulating gentle directional nudges in a safe environment trains fast-twitch reflex stepping so if a stumble occurs, the body catches itself automatically without falling.'
     }
   ];
 
   const faqs = [
     {
-      q: 'Why should women choose a certified female personal trainer at home?',
-      a: 'A certified female trainer understands female physiology, hormonal cycles, PCOS/PCOD challenges, and pelvic floor changes firsthand. Furthermore, training in your living room affords 100% privacy without the self-consciousness or crowded gaze often felt in public commercial gym weight rooms.'
+      q: 'Why is fall prevention the most urgent fitness priority for senior citizens?',
+      a: 'According to geriatric medical research, 1 in 3 adults over the age of 65 experiences a fall each year, with hip fractures leading to severe immobility. Regaining balance reflexes and strengthening ankle stabilizers eliminates over 75% of domestic trip-and-fall hazards.'
     },
     {
-      q: 'Are Fit4Steps lady trainers verified and certified?',
-      a: 'Yes. 100% of our female fitness coaches possess recognized national/international sports conditioning certifications (ACE, ACSM, K11, or Yoga Alliance) and undergo mandatory government police and identity verification.'
+      q: 'What causes the common elderly "shuffling gait"?',
+      a: 'A shuffling walk is primarily caused by weakness in the tibialis anterior muscle (leading to foot drop) and tight hip flexors. Seniors drag their feet rather than lifting their toes, making them prone to catching rugs or doorway thresholds. Our drills specifically strengthen ankle dorsiflexion and hip extension.'
     },
     {
-      q: 'Can you help with PCOS, thyroid conditions, and hormonal weight gain?',
-      a: 'Yes. Our female trainers specialize in endocrine-sensitive exercise protocols that combine resistance training to improve insulin sensitivity with restorative breathwork to reduce cortisol, which directly helps regulate menstrual regularity and accelerate visceral fat loss.'
+      q: 'How do you ensure my parent will not fall during balance training?',
+      a: 'Safety is paramount. All balance exercises are conducted within arm’s reach of a stable chair or sturdy wall, with our certified trainer spotting the senior with a protective gait stance at all times. We never push past safe neurological limits.'
     },
     {
-      q: 'Is this service suitable for senior women (50+ and 60+)?',
-      a: 'Absolutely. Many of our senior female clients in Noida, Delhi, and Gurugram train with lady coaches who focus on osteopenia prevention, knee joint cartilage care, gentle spinal flexibility, and fall prevention.'
+      q: 'Can balance training help seniors who use a walking stick or cane?',
+      a: 'Yes! Many of our clients who were dependent on a cane for short indoor distances have rebuilt sufficient ankle proprioception and pelvic strength to walk steadily around their homes unassisted.'
     },
     {
-      q: 'How many sessions per week are recommended for women looking to lose weight?',
-      a: 'We typically recommend 3 to 4 sessions per week combined with daily step targets (8,000–10,000 steps) and balanced protein nutrition. This allows adequate recovery while generating an optimal weekly caloric deficit.'
-    },
-    {
-      q: 'Can I do a trial session with a lady trainer before committing to a package?',
-      a: 'Yes. You can book an introductory doorstep trial session where our female master coach assesses your flexibility, discusses your medical history, and conducts a 30-minute tailored workout in your home.'
+      q: 'How long does it take to see noticeable balance improvement?',
+      a: 'Most families notice a firmer, more confident walking stride and less hesitancy when standing from chairs within 3 to 4 weeks of consistent twice-weekly or thrice-weekly coaching.'
     }
   ];
 
@@ -208,9 +194,9 @@ export default function FemaleFitnessTrainersPage() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: 'var(--text-muted)' }}>
           <Link href="/" style={{ color: 'var(--text-body)', textDecoration: 'none' }}>Home</Link>
           <span>/</span>
-          <Link href="/services" style={{ color: 'var(--text-body)', textDecoration: 'none' }}>Services</Link>
+          <Link href="/fitness-training-program-for-senior-citizens" style={{ color: 'var(--text-body)', textDecoration: 'none' }}>Senior Fitness</Link>
           <span>/</span>
-          <span style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Female Fitness Trainers</span>
+          <span style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Mobility & Balance Training</span>
         </div>
       </div>
 
@@ -220,22 +206,22 @@ export default function FemaleFitnessTrainersPage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '48px', alignItems: 'center' }}>
             <div>
               <div className="badge badge-gold" style={{ marginBottom: '18px', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-                <UserCheck size={15} /> Certified Lady Coaches at Your Doorstep
+                <ShieldCheck size={15} /> Geriatric Fall Prevention & Gait Correction
               </div>
               <h1 style={{ fontSize: 'clamp(32px, 4.2vw, 48px)', color: 'var(--text-main)', lineHeight: 1.18, marginBottom: '20px', fontWeight: 800 }}>
-                Certified Female Fitness Trainers <br />
-                <span className="text-gold">Noida, South Delhi & Gurugram</span>
+                Mobility & Balance Training <br />
+                <span className="text-gold">Fall Prevention for Seniors</span>
               </h1>
               <p style={{ fontSize: '17px', color: 'var(--text-body)', lineHeight: 1.7, marginBottom: '24px' }}>
-                Workout in complete safety, comfort, and privacy. Our certified female fitness coaches bring customized routines for women’s body sculpting, PCOS management, postnatal core healing, and senior vitality directly to your home.
+                Falls are the single greatest threat to senior independence and mobility. Our specialized in-home balance drills retrain neurological reflexes, vestibular equilibrium, and foot proprioception so seniors walk fearlessly.
               </p>
 
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '12px', marginBottom: '32px' }}>
                 {[
-                  '100% Certified Female Faculty',
-                  'Police & Identity Cleared',
-                  'PCOS & Thyroid Specialization',
-                  'Diastasis Recti Safe Postnatal'
+                  'Eliminates Shuffling Gait',
+                  'Retrains Vestibular Reflexes',
+                  '100% Supervised & Safe',
+                  'Restores Fearless Walking'
                 ].map((pill, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13.5px', color: 'var(--text-main)', fontWeight: 600 }}>
                     <CheckCircle2 size={16} color="var(--brand-gold)" />
@@ -246,13 +232,13 @@ export default function FemaleFitnessTrainersPage() {
 
               <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
                 <a
-                  href="https://wa.me/919999448206?text=Hi%20Fit4Steps,%20I%20am%20interested%20in%20a%20Certified%20Female%20Fitness%20Trainer%20at%20home.%20Please%20share%20details."
+                  href="https://wa.me/919999448206?text=Hi%20Fit4Steps,%20I%20am%20interested%20in%20Senior%20Mobility%20and%20Balance%20Training%20for%20my%20parents.%20Please%20guide%20me."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-gold"
                   style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '14px 28px', fontSize: '15px' }}
                 >
-                  <MessageCircle size={18} /> Book Lady Trainer Trial
+                  <MessageCircle size={18} /> Book Free Balance Screening
                 </a>
                 <a
                   href="tel:+919999448206"
@@ -275,8 +261,8 @@ export default function FemaleFitnessTrainersPage() {
                 position: 'relative'
               }}>
                 <img
-                  src="/assets/image/h-s2-servi-card-img-2.webp"
-                  alt="Certified female fitness coach training woman at home in Delhi NCR"
+                  src="/assets/image/hero-senior-trainer.jpg"
+                  alt="Senior mobility and balance training coach assisting elderly client at home in Delhi NCR"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
               </div>
@@ -306,11 +292,11 @@ export default function FemaleFitnessTrainersPage() {
                   justifyContent: 'center',
                   fontWeight: 800
                 }}>
-                  <Lock size={20} color="var(--brand-gold)" />
+                  <ShieldCheck size={20} color="var(--brand-gold)" />
                 </div>
                 <div>
-                  <div style={{ fontSize: '15px', fontWeight: 800, color: 'var(--text-main)' }}>100% Home Privacy</div>
-                  <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Verified Lady Trainers Across 350+ NCR Households</div>
+                  <div style={{ fontSize: '15px', fontWeight: 800, color: 'var(--text-main)' }}>Zero Domestic Falls</div>
+                  <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>Over 400+ Seniors Protected Across Delhi NCR</div>
                 </div>
               </div>
             </div>
@@ -320,9 +306,9 @@ export default function FemaleFitnessTrainersPage() {
 
       {/* 2. SPECIFICATION MATRIX */}
       <SpecsMatrix
-        badge="Female Concierge Training Specs"
-        title="Tailored Specifically for Women's Physiological Needs"
-        subtitle="Private in-home fitness led by certified female trainers with comprehensive background verification."
+        badge="Proprioceptive Standards"
+        title="How We Rebuild Stability & Prevent Falls"
+        subtitle="Targeted sensory balance drills and gait re-education to eliminate fall risks."
         specs={specs}
       />
 
@@ -331,13 +317,13 @@ export default function FemaleFitnessTrainersPage() {
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '760px', margin: '0 auto 50px' }}>
             <div className="badge badge-navy" style={{ marginBottom: '14px' }}>
-              <Heart size={14} /> Specialized Women’s Conditioning
+              <Compass size={14} /> Neurological Pathways
             </div>
             <h2 style={{ fontSize: 'clamp(28px, 4vw, 38px)', color: 'var(--text-main)', fontWeight: 800, marginBottom: '14px' }}>
-              Core Areas of Expertise
+              The Four Sensory Systems of Senior Balance
             </h2>
             <p style={{ color: 'var(--text-body)', fontSize: '16px', lineHeight: 1.6 }}>
-              A woman’s musculoskeletal and hormonal architecture requires precise programming. We discard masculine bodybuilding templates in favor of hormone-balancing, posture-realigning workouts.
+              Balance is not merely muscular. It requires harmonious integration between foot mechanoreceptors, the inner ear vestibular fluid, and visual spatial orientation.
             </p>
           </div>
 
@@ -370,33 +356,33 @@ export default function FemaleFitnessTrainersPage() {
         </div>
       </section>
 
-      {/* 4. REAL CLIENT TESTIMONIAL */}
+      {/* 4. REAL SENIOR CASE STUDY */}
       <section className="section-surface" style={{ padding: '80px 0', borderTop: '1px solid var(--border-subtle)' }}>
         <div className="container" style={{ maxWidth: '860px' }}>
           <div className="card-clean" style={{ padding: '40px', borderRadius: '24px' }}>
             <div style={{ display: 'flex', gap: '24px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '24px' }}>
               <img
-                src="/assets/image/ftr-testiminial-babitha.webp"
-                alt="Babitha - Fit4Steps Client"
+                src="/assets/image/ftr-testiminial-shailen.webp"
+                alt="Senior Balance Client"
                 style={{ width: '70px', height: '70px', borderRadius: '50%', objectFit: 'cover', border: '3px solid var(--brand-gold)' }}
               />
               <div>
-                <h3 style={{ fontSize: '20px', fontWeight: 800, color: 'var(--text-main)' }}>Babitha R.</h3>
-                <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Working Mother • Vasant Kunj, South Delhi</div>
+                <h3 style={{ fontSize: '20px', fontWeight: 800, color: 'var(--text-main)' }}>S.K. Bansal (76 yrs)</h3>
+                <div style={{ fontSize: '13px', color: 'var(--text-muted)' }}>Resident • DLF Phase 2, Gurugram</div>
                 <div style={{ display: 'flex', gap: '4px', marginTop: '4px', color: '#f59e0b', fontSize: '14px' }}>
-                  ★★★★★ <span style={{ fontSize: '12px', color: 'var(--text-muted)', marginLeft: '6px' }}>Verified Client • 6 Months Training</span>
+                  ★★★★★ <span style={{ fontSize: '12px', color: 'var(--text-muted)', marginLeft: '6px' }}>Verified Senior Client • 9 Months Coaching</span>
                 </div>
               </div>
             </div>
 
             <p style={{ fontSize: '16px', color: 'var(--text-body)', lineHeight: 1.75, fontStyle: 'italic', marginBottom: '20px' }}>
-              “After having my second child, I struggled with severe lower back stiffness and weak core muscles. Walking into a regular gym felt overwhelming and uncomfortable. Having a certified female trainer from Fit4Steps come to my Vasant Kunj home was the best health decision I’ve ever made. She checked for diastasis recti, taught me proper pelvic floor breathing, and helped me drop 8 kg comfortably without extreme dieting.”
+              “After a minor slip in the bathroom last winter, I developed an intense fear of walking without holding onto furniture or someone’s arm. My steps had become shuffling and hesitant. Fit4Steps sent a certified geriatric mobility coach to our DLF Phase 2 home. He stood right beside me, working on tandem walking, ankle lifting, and eye-horizon coordination. Today, I walk out to the society park with my grandchildren completely unassisted and with total confidence!”
             </p>
 
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', fontSize: '13px', color: 'var(--brand-gold)', fontWeight: 700 }}>
-              <span>✓ Closed Diastasis Recti Gap</span>
-              <span>✓ Zero Lower Back Ache</span>
-              <span>✓ Regained Pre-Pregnancy Stamina</span>
+              <span>✓ Overcame Post-Fall Psychological Fear</span>
+              <span>✓ Eliminated Shuffling Foot Drag</span>
+              <span>✓ Walking Independently in Society Parks</span>
             </div>
           </div>
         </div>
@@ -407,10 +393,10 @@ export default function FemaleFitnessTrainersPage() {
         <div className="container" style={{ maxWidth: '800px' }}>
           <div style={{ textAlign: 'center', marginBottom: '44px' }}>
             <div className="badge badge-gold" style={{ marginBottom: '14px' }}>
-              <HelpCircle size={14} /> Questions & Answers
+              <HelpCircle size={14} /> Balance FAQs
             </div>
             <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 34px)', color: 'var(--text-main)', fontWeight: 800 }}>
-              Frequently Asked Questions About Lady Trainers
+              Frequently Asked Questions About Mobility & Balance
             </h2>
           </div>
 
@@ -453,20 +439,20 @@ export default function FemaleFitnessTrainersPage() {
       <section className="section-padding" style={{ background: 'var(--brand-navy)', color: '#ffffff', textAlign: 'center', padding: '70px 0' }}>
         <div className="container" style={{ maxWidth: '720px' }}>
           <h2 style={{ fontSize: 'clamp(28px, 4vw, 38px)', color: '#ffffff', fontWeight: 800, marginBottom: '16px' }}>
-            Schedule a Confidential Doorstep Consultation
+            Book a Free Doorstep Balance Assessment
           </h2>
           <p style={{ color: '#cbd5e1', fontSize: '16px', lineHeight: 1.65, marginBottom: '32px' }}>
-            Connect with our female master trainer to discuss your fitness goals, medical history, and preferred workout time slots across Noida, Delhi, and Gurugram.
+            Our geriatric mobility coach will visit your parent’s home in Noida, Delhi, or Gurugram. We conduct a gentle 30-minute balance and gait screening with zero fall risk.
           </p>
           <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
-              href="https://wa.me/919999448206?text=Hi%20Fit4Steps,%20I%20would%20like%20to%20book%20a%20trial%20session%20with%20a%20Certified%20Female%20Fitness%20Trainer."
+              href="https://wa.me/919999448206?text=Hi%20Fit4Steps,%20I%20would%20like%20to%20schedule%20a%20Senior%20Mobility%20and%20Balance%20Assessment%20at%20home."
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-gold"
               style={{ padding: '14px 30px', fontSize: '15px' }}
             >
-              <MessageCircle size={18} /> Schedule Lady Trainer Trial
+              <MessageCircle size={18} /> Schedule Doorstep Balance Trial
             </a>
             <a
               href="tel:+919999448206"

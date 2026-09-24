@@ -296,7 +296,7 @@ export default function NoidaLocationPage() {
             >
               <MessageCircle size={18} /> Schedule Doorstep Trial
             </a>
-            <Link href="/senior-fitness" className="btn btn-outline">
+            <Link href="/fitness-training-program-for-senior-citizens" className="btn btn-outline">
               Explore Senior Fitness <ArrowRight size={16} />
             </Link>
           </div>

@@ -87,7 +87,7 @@ export default function KneeTherapyPage() {
             '@type': 'ListItem',
             position: 2,
             name: 'Senior Fitness',
-            item: 'https://fit4steps.com/senior-fitness',
+            item: 'https://fit4steps.com/fitness-training-program-for-senior-citizens',
           },
           {
             '@type': 'ListItem',
@@ -200,7 +200,7 @@ export default function KneeTherapyPage() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '13px', color: 'var(--text-muted)' }}>
           <Link href="/" style={{ color: 'var(--text-body)', textDecoration: 'none' }}>Home</Link>
           <span>/</span>
-          <Link href="/senior-fitness" style={{ color: 'var(--text-body)', textDecoration: 'none' }}>Senior Fitness</Link>
+          <Link href="/fitness-training-program-for-senior-citizens" style={{ color: 'var(--text-body)', textDecoration: 'none' }}>Senior Fitness</Link>
           <span>/</span>
           <span style={{ color: 'var(--brand-gold)', fontWeight: 600 }}>Knee Pain Therapy</span>
         </div>

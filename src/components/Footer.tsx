@@ -119,16 +119,15 @@ export default function Footer() {
               <Heart size={16} /> Senior Fitness
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '11px' }}>
-              <li><Link href="/senior-fitness" className="footer-link-bold">Senior Citizen Training</Link></li>
-              <li><Link href="/senior-fitness/fifty-plus" className="footer-link">Fitness for 50+</Link></li>
-              <li><Link href="/senior-fitness/strength-seniors" className="footer-link">Strength Training for Seniors</Link></li>
+              <li><Link href="/fitness-training-program-for-senior-citizens" className="footer-link-bold">Senior Citizen Training</Link></li>
+              <li><Link href="/personal-fitness-training-for-50-plus" className="footer-link">Fitness for 50+</Link></li>
+              <li><Link href="/strength-training-for-seniors-at-home-delhi" className="footer-link">Strength Training Delhi</Link></li>
+              <li><Link href="/strength-training-for-seniors-at-home-gurugram" className="footer-link">Strength Training Gurugram</Link></li>
               <li><Link href="/senior-fitness/knee-therapy" className="footer-link">Joint Restoration & Knee Pain</Link></li>
-              <li><Link href="/senior-fitness/mobility-balance" className="footer-link">Mobility & Balance Training</Link></li>
+              <li><Link href="/mobility-exercises-for-senior-citizens" className="footer-link">Mobility & Balance Training</Link></li>
               <li><Link href="/senior-citizen-fitness-trainer-at-home-delhi" className="footer-link">Senior Fitness Trainer Delhi</Link></li>
-              <li><Link href="/locations/delhi" className="footer-link">Strength Training Delhi</Link></li>
               <li><Link href="/senior-citizen-fitness-trainer-at-home-gurugram" className="footer-link">Senior Fitness Trainer Gurugram</Link></li>
-              <li><Link href="/locations/gurugram" className="footer-link">Strength Training Gurugram</Link></li>
-              <li><Link href="/mobility-exercises-for-senior-citizens" className="footer-link">Senior Exercises Gurugram</Link></li>
+              <li><Link href="/exercises-for-senior-citizens-gurugram" className="footer-link">Senior Exercises Gurugram</Link></li>
             </ul>
           </div>
 
@@ -145,10 +144,10 @@ export default function Footer() {
               Services
             </div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '11px' }}>
-              <li><Link href="/services/personal-training-at-home" className="footer-link-bold">Personal Training at Home</Link></li>
-              <li><Link href="/services/female-fitness-trainers" className="footer-link">Female Trainers</Link></li>
-              <li><Link href="/services/couple-training" className="footer-link">Couple Training</Link></li>
-              <li><Link href="/services/kids-fitness-functional-training" className="footer-link">Kids Training</Link></li>
+              <li><Link href="/in-home-personal-trainer-near-me" className="footer-link-bold">Personal Training at Home</Link></li>
+              <li><Link href="/female-fitness-trainers-in-delhi" className="footer-link">Female Fitness Trainers</Link></li>
+              <li><Link href="/couples-fitness-training-at-home-delhi" className="footer-link">Couple Training</Link></li>
+              <li><Link href="/fitness-training-for-kids-noida" className="footer-link">Kids & Youth Training</Link></li>
               <li><Link href="/services/prenatal-postnatal-yoga" className="footer-link">Prenatal & Postnatal</Link></li>
               <li><Link href="/services/corrective-exercise-lifestyle-diseases" className="footer-link">Corrective Exercise</Link></li>
               <li><Link href="/services/stress-management-training" className="footer-link">Stress Management</Link></li>
@@ -212,8 +211,11 @@ export default function Footer() {
                   <Link href="/locations/noida" className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                     <MapPin size={13} color="var(--brand-gold)" /> Noida (HQ Jaypee Wishtown)
                   </Link>
-                  <Link href="/locations/delhi" className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                  <Link href="/personal-fitness-trainer-delhi" className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                     <MapPin size={13} color="var(--brand-gold)" /> Delhi (South Delhi & GK)
+                  </Link>
+                  <Link href="/locations/gurugram" className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <MapPin size={13} color="var(--brand-gold)" /> Gurugram (DLF & Cyber City)
                   </Link>
                   <Link href="/personal-trainer-greater-kailash-delhi" className="footer-link" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                     <MapPin size={13} color="var(--brand-gold)" /> Greater Kailash (GK 1 & 2)

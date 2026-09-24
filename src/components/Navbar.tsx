@@ -38,7 +38,7 @@ export default function Navbar() {
 
   // Desktop navigation links (clean, concise, zero wrapping)
   const desktopLinks = [
-    { name: 'Senior & Joint Care', href: '/senior-fitness', isPillar: true },
+    { name: 'Senior & Joint Care', href: '/fitness-training-program-for-senior-citizens', isPillar: true },
     { name: 'Services', href: '/services' },
     { name: 'Programs', href: '/programs' },
     { name: 'Trainers', href: '/about/trainers' },
@@ -51,7 +51,7 @@ export default function Navbar() {
   // Mobile navigation links (comprehensive with Home)
   const mobileLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Senior Citizen & Joint Care', href: '/senior-fitness', badge: 'Lead Pillar' },
+    { name: 'Senior Citizen & Joint Care', href: '/fitness-training-program-for-senior-citizens', badge: 'Lead Pillar' },
     { name: 'In-Home Services Spectrum', href: '/services' },
     { name: 'Specialized Programs', href: '/programs' },
     { name: 'Our Certified Trainers', href: '/about/trainers' },

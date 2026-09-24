@@ -37,7 +37,7 @@ export default function HomePage() {
       tag: 'Flagship Program',
       description: 'Specialized 1-on-1 physical rehabilitation, knee pain therapy, balance training, and fall prevention for adults aged 50+ in the comfort of home.',
       image: '/assets/image/senior-joint-therapy.jpg',
-      link: '/senior-fitness',
+      link: '/fitness-training-program-for-senior-citizens',
       benefits: ['Knee & joint pain decompression', 'Fall prevention & balance training', 'Preserve muscle & bone density']
     },
     {
@@ -518,7 +518,7 @@ export default function HomePage() {
             </div>
 
             <Link
-              href="/senior-fitness"
+              href="/fitness-training-program-for-senior-citizens"
               className="btn btn-primary"
               style={{ padding: '12px 24px', fontSize: '14px' }}
             >

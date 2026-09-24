@@ -111,7 +111,7 @@ Loaded via Google Fonts in [`src/app/globals.css`](file:///Users/admin/Downloads
 
 ## Complete Site Map & Route Architecture
 
-The platform comprises **68 static routes** categorized into logical clinical and service clusters:
+The platform preserves and strengthens all historical #1 Google rankings by maintaining established root URLs as primary canonical destinations and eliminating duplicate folder routes with 301 permanent redirects:
 
 ```
 src/app/
@@ -121,24 +121,32 @@ src/app/
 ├── robots.ts                                 # Search Engine Crawling Directives
 ├── globals.css                               # Master Design System & Color Tokens
 │
-├── services/                                 # 1-on-1 In-Home Core Services
+├── [Established #1 Ranking Pages & Flagship Pillars]
+│   ├── fitness-training-program-for-senior-citizens/page.tsx # #1 "personal trainer for seniors in home"
+│   ├── in-home-personal-trainer-near-me/page.tsx             # #1 "fitness trainer at home Noida"
+│   ├── strength-training-for-seniors-at-home-delhi/page.tsx  # #1 "strength training for seniors at home Delhi"
+│   ├── strength-training-for-seniors-at-home-gurugram/page.tsx # #1 "strength training for seniors at home Gurugram"
+│   ├── exercises-for-senior-citizens-gurugram/page.tsx        # #4 "senior citizens exercises Gurugram"
+│   ├── female-fitness-trainers-in-delhi/page.tsx             # Top Ranking Female Trainers
+│   ├── couples-fitness-training-at-home-delhi/page.tsx       # Partner Fitness Training
+│   ├── fitness-training-for-kids-noida/page.tsx              # Kids Functional Agility
+│   ├── personal-fitness-training-for-50-plus/page.tsx        # 50+ Sarcopenia Prevention
+│   ├── mobility-exercises-for-senior-citizens/page.tsx       # Senior Mobility & Fall Prevention
+│   ├── personal-fitness-trainer-delhi/page.tsx               # South Delhi Local Personal Trainer
+│   ├── personal-trainer-greater-kailash-delhi/page.tsx       # Greater Kailash GK 1 & 2
+│   ├── senior-citizen-fitness-trainer-at-home-delhi/page.tsx # Delhi Senior In-Home Fitness
+│   └── senior-citizen-fitness-trainer-at-home-gurugram/page.tsx # Gurugram Senior In-Home Fitness
+│
+├── services/                                 # In-Home Services Hub & Specialized Modalities
 │   ├── page.tsx                              # Services Hub with Category Filters
-│   ├── personal-training-at-home/page.tsx    # Doorstep Personal Training
-│   ├── female-fitness-trainers/page.tsx      # Female Fitness Trainers (PCOS/Postnatal)
-│   ├── couple-training/page.tsx              # Couples & Partner Fitness Training
-│   ├── kids-fitness-functional-training/     # Kids & Teen Posture/Conditioning
 │   ├── prenatal-postnatal-yoga/              # Trimester-Specific Pregnancy Yoga
 │   ├── corrective-exercise-lifestyle-diseases/ # Diabetes, Hypertension & Spondylosis
 │   ├── stress-management-training/           # Executive Burnout & Cortisol Reset
 │   ├── personalized-online-training/         # Global NRI 1-on-1 Virtual Coaching
 │   └── corporate-wellness-yoga/              # Corporate Wellness & Ergonomics
 │
-├── senior-fitness/                           # Geriatric Physical Care & Joint Therapy
-│   ├── page.tsx                              # Senior Fitness Overview Hub
-│   ├── fifty-plus/page.tsx                   # 50+ Vitality & Sarcopenia Prevention
-│   ├── strength-seniors/page.tsx             # 60+ Functional Strength & Bone Density
-│   ├── knee-therapy/page.tsx                 # Non-Surgical Knee Osteoarthritis Therapy
-│   └── mobility-balance/page.tsx             # Fall Prevention & Vestibular Balance
+├── senior-fitness/
+│   └── knee-therapy/page.tsx                 # Non-Surgical Knee Osteoarthritis Therapy
 │
 ├── programs/                                 # 12 Specialized Training Disciplines
 │   ├── page.tsx                              # Programs Catalog with Filter Tabs
@@ -159,23 +167,14 @@ src/app/
 ├── locations/                                # Geographic Hubs & Localized Landing Pages
 │   ├── page.tsx                              # Locations Overview
 │   ├── noida/page.tsx                        # Noida (Sectors 1 to 168)
-│   ├── delhi/page.tsx                        # South, Central & East Delhi
 │   └── gurugram/page.tsx                     # DLF, Golf Course Road & Sohna Road
-│
-├── [Hyper-Local SEO Landing Pages]
-│   ├── senior-citizen-fitness-trainer-at-home-delhi/
-│   ├── senior-citizen-fitness-trainer-at-home-gurugram/
-│   ├── personal-fitness-trainer-delhi/
-│   ├── personal-trainer-greater-kailash-delhi/
-│   ├── mobility-exercises-for-senior-citizens/
-│   ├── female-fitness-trainers-in-delhi/
-│   ├── couples-fitness-training-at-home-delhi/
-│   ├── fitness-training-for-kids-noida/
-│   └── personal-fitness-training-for-50-plus/
 │
 ├── blog/                                     # Clinical Wellness Articles
 │   ├── page.tsx                              # Blog Article Hub
 │   └── [slug]/page.tsx                       # Individual Blog Posts
+│       ├── /blog/exercises-for-knee-pain     # (301 from /exercises-for-knee-pain)
+│       ├── /blog/safe-exercises-for-elderly  # (301 from /safe-exercises-for-elderly)
+│       └── [+6 clinical guides]
 │
 ├── about/                                    # Company, Philosophy & Trainer Team
 │   ├── page.tsx                              # Fit4Steps Story & Standards
