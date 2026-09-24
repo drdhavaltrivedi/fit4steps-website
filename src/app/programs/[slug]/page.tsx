@@ -24,10 +24,11 @@ import {
   HeartPulse,
   PackageCheck,
   Quote,
-  Check
+  Check,
+  HelpCircle,
+  ChevronDown
 } from 'lucide-react';
 import { programsData } from '@/data/programsData';
-import ProgramFAQ from '@/components/ProgramFAQ';
 
 export function generateStaticParams() {
   return Object.keys(programsData).map((slug) => ({ slug }));
@@ -806,20 +807,51 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
-      {/* 9. INTERACTIVE CLINICAL FAQ SECTION */}
-      <section className="section-page">
-        <div className="container" style={{ maxWidth: '840px' }}>
-          <div style={{ textAlign: 'center', marginBottom: '36px' }}>
-            <span className="badge badge-gold" style={{ marginBottom: '8px' }}>Got Questions?</span>
-            <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 36px)', color: 'var(--text-main)', fontWeight: 800 }}>
-              Frequently Asked Questions About {program.title}
+      {/* 9. CLINICAL & PRACTICAL FAQS */}
+      <section className="section-surface" style={{ padding: '80px 0', borderTop: '1px solid var(--border-subtle)' }}>
+        <div className="container" style={{ maxWidth: '800px' }}>
+          <div style={{ textAlign: 'center', marginBottom: '44px' }}>
+            <div className="badge badge-gold" style={{ marginBottom: '14px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <HelpCircle size={14} /> Frequently Asked Questions
+            </div>
+            <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 34px)', color: 'var(--text-main)', fontWeight: 800 }}>
+              Got Questions About {program.title}?
             </h2>
-            <p style={{ fontSize: '15px', color: 'var(--text-body)', marginTop: '8px' }}>
-              Expert answers to common clinical and practical questions regarding in-home training.
-            </p>
           </div>
 
-          <ProgramFAQ faqs={program.faqs} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            {program.faqs.map((faq, i) => (
+              <details
+                key={i}
+                name="program-faq"
+                className="theme-card"
+                open={i === 0}
+                style={{
+                  padding: '18px 24px',
+                  borderRadius: '14px',
+                  cursor: 'pointer',
+                  border: '1px solid var(--border-subtle)'
+                }}
+              >
+                <summary style={{
+                  fontSize: '16px',
+                  fontWeight: 700,
+                  color: 'var(--text-main)',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  userSelect: 'none',
+                  listStyle: 'none'
+                }}>
+                  <span>{faq.q}</span>
+                  <ChevronDown size={18} color="var(--brand-gold)" />
+                </summary>
+                <p style={{ marginTop: '14px', fontSize: '14.5px', color: 'var(--text-body)', lineHeight: 1.7, margin: '14px 0 0' }}>
+                  {faq.a}
+                </p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
