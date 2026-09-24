@@ -1,0 +1,44 @@
+# Next.js
+.next/
+out/
+
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing & Coverage
+coverage/
+
+# Environment variables
+.env*.local
+
+# Vercel & Turbo
+.vercel
+.turbo
+
+# System files
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary screenshots in root
+about_page_screenshot.png
+about_screenshot.png
+contact_fullpage.png
+contact_page_screenshot.png
+mobile_homepage_screenshot.png
+new_homepage_fullpage.png
+new_homepage_screenshot.png
+original_screenshot_fullpage.png
+original_screenshot_viewport.png
+programs_fullpage.png
+senior_fitness_page_screenshot.png
+senior_page_screenshot.png
+services_fullpage.png
+services_screenshot.png
+success_stories_fullpage.png
+v6_desktop_screenshot.png
+v6_mobile_screenshot.png
