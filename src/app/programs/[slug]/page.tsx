@@ -325,72 +325,275 @@ export default async function ProgramDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* 2. CLINICAL & TECHNICAL SPECIFICATIONS MATRIX */}
-      <section className="section-alt" style={{ padding: '40px 0' }}>
+      <section className="section-alt" style={{ padding: '60px 0' }}>
         <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto 32px' }}>
-            <span className="badge badge-navy" style={{ marginBottom: '8px' }}>At a Glance</span>
-            <h2 style={{ fontSize: '26px', color: 'var(--text-main)', fontWeight: 700 }}>
-              Program Technical & Delivery Specifications
+          <div style={{ textAlign: 'center', maxWidth: '760px', margin: '0 auto 40px' }}>
+            <div className="badge badge-gold" style={{ marginBottom: '14px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              <Activity size={14} /> At a Glance
+            </div>
+            <h2 style={{ fontSize: 'clamp(26px, 3.5vw, 36px)', color: 'var(--text-main)', fontWeight: 800 }}>
+              Program Specifications & Delivery Matrix
             </h2>
+            <p style={{ fontSize: '15px', color: 'var(--text-body)', lineHeight: 1.6, marginTop: '8px' }}>
+              Clinical standards, coaching parameters, and doorstep delivery protocols across Delhi NCR.
+            </p>
           </div>
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-            gap: '20px'
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gap: '24px'
           }}>
-            <div className="card-clean">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                <Clock size={18} color="var(--brand-gold)" />
-                <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>Session Duration</span>
+            {/* 1. Session Duration */}
+            <div className="theme-card" style={{
+              padding: '24px',
+              borderRadius: '16px',
+              border: '1px solid var(--border-subtle)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: 'var(--shadow-sm)'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                  <div style={{
+                    width: '42px',
+                    height: '42px',
+                    borderRadius: '10px',
+                    background: 'var(--brand-gold-soft)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <Clock size={20} color="var(--brand-gold)" />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.8px', color: 'var(--text-muted)', fontWeight: 700, display: 'block' }}>
+                      Time Architecture
+                    </span>
+                    <span style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-main)' }}>
+                      Session Duration
+                    </span>
+                  </div>
+                </div>
+                <div style={{ fontSize: '18px', fontWeight: 800, color: 'var(--brand-gold-text)', lineHeight: 1.35, marginBottom: '8px' }}>
+                  {program.specs.duration}
+                </div>
+                <p style={{ fontSize: '13.5px', color: 'var(--text-body)', lineHeight: 1.6, margin: 0 }}>
+                  Structured 5-segment framework comprising joint lubrication, core activation, progressive main loading, and assisted PNF stretches.
+                </p>
               </div>
-              <div style={{ fontSize: '17px', fontWeight: 700, color: 'var(--text-main)' }}>{program.specs.duration}</div>
-              <p style={{ fontSize: '12.5px', color: 'var(--text-body)', margin: '6px 0 0' }}>Includes warmup, main loading, and assisted PNF stretches.</p>
             </div>
 
-            <div className="card-clean">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                <Activity size={18} color="var(--brand-gold)" />
-                <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>Intensity Spectrum</span>
+            {/* 2. Intensity Spectrum */}
+            <div className="theme-card" style={{
+              padding: '24px',
+              borderRadius: '16px',
+              border: '1px solid var(--border-subtle)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: 'var(--shadow-sm)'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                  <div style={{
+                    width: '42px',
+                    height: '42px',
+                    borderRadius: '10px',
+                    background: 'var(--brand-gold-soft)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <Activity size={20} color="var(--brand-gold)" />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.8px', color: 'var(--text-muted)', fontWeight: 700, display: 'block' }}>
+                      Workload Modulation
+                    </span>
+                    <span style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-main)' }}>
+                      Intensity Spectrum
+                    </span>
+                  </div>
+                </div>
+                <div style={{ fontSize: '18px', fontWeight: 800, color: 'var(--brand-gold-text)', lineHeight: 1.35, marginBottom: '8px' }}>
+                  {program.specs.intensity}
+                </div>
+                <p style={{ fontSize: '13.5px', color: 'var(--text-body)', lineHeight: 1.6, margin: 0 }}>
+                  Regulated dynamically using Rate of Perceived Exertion (RPE) and biometric feedback to ensure safe progression without joint overtaxation.
+                </p>
               </div>
-              <div style={{ fontSize: '17px', fontWeight: 700, color: 'var(--text-main)' }}>{program.specs.intensity}</div>
-              <p style={{ fontSize: '12.5px', color: 'var(--text-body)', margin: '6px 0 0' }}>Regulated in real-time according to client biometric feedback.</p>
             </div>
 
-            <div className="card-clean">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                <Flame size={18} color="var(--brand-gold)" />
-                <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>Energy Expenditure</span>
+            {/* 3. Energy Expenditure */}
+            <div className="theme-card" style={{
+              padding: '24px',
+              borderRadius: '16px',
+              border: '1px solid var(--border-subtle)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: 'var(--shadow-sm)'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                  <div style={{
+                    width: '42px',
+                    height: '42px',
+                    borderRadius: '10px',
+                    background: 'var(--brand-gold-soft)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <Flame size={20} color="var(--brand-gold)" />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.8px', color: 'var(--text-muted)', fontWeight: 700, display: 'block' }}>
+                      Metabolic Output
+                    </span>
+                    <span style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-main)' }}>
+                      Energy Expenditure
+                    </span>
+                  </div>
+                </div>
+                <div style={{ fontSize: '18px', fontWeight: 800, color: 'var(--brand-gold-text)', lineHeight: 1.35, marginBottom: '8px' }}>
+                  {program.specs.caloricBurn}
+                </div>
+                <p style={{ fontSize: '13.5px', color: 'var(--text-body)', lineHeight: 1.6, margin: 0 }}>
+                  Direct active caloric expenditure per session, combined with prolonged excess post-exercise oxygen consumption (EPOC) metabolic afterburn.
+                </p>
               </div>
-              <div style={{ fontSize: '17px', fontWeight: 700, color: 'var(--text-main)' }}>{program.specs.caloricBurn}</div>
-              <p style={{ fontSize: '12.5px', color: 'var(--text-body)', margin: '6px 0 0' }}>Sustained metabolic elevation beyond active workout time.</p>
             </div>
 
-            <div className="card-clean">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                <Award size={18} color="var(--brand-gold)" />
-                <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>Trainer Accreditation</span>
+            {/* 4. Trainer Accreditation */}
+            <div className="theme-card" style={{
+              padding: '24px',
+              borderRadius: '16px',
+              border: '1px solid var(--border-subtle)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: 'var(--shadow-sm)'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                  <div style={{
+                    width: '42px',
+                    height: '42px',
+                    borderRadius: '10px',
+                    background: 'var(--brand-gold-soft)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <Award size={20} color="var(--brand-gold)" />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.8px', color: 'var(--text-muted)', fontWeight: 700, display: 'block' }}>
+                      Quality Assurance
+                    </span>
+                    <span style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-main)' }}>
+                      Trainer Accreditation
+                    </span>
+                  </div>
+                </div>
+                <div style={{ fontSize: '18px', fontWeight: 800, color: 'var(--brand-gold-text)', lineHeight: 1.35, marginBottom: '8px' }}>
+                  {program.specs.trainerCredentials}
+                </div>
+                <p style={{ fontSize: '13.5px', color: 'var(--text-body)', lineHeight: 1.6, margin: 0 }}>
+                  Police-verified, background-checked coaches holding certified credentials in biomechanics, kinesiology, and senior corrective exercise.
+                </p>
               </div>
-              <div style={{ fontSize: '16px', fontWeight: 700, color: 'var(--text-main)' }}>{program.specs.trainerCredentials}</div>
-              <p style={{ fontSize: '12.5px', color: 'var(--text-body)', margin: '6px 0 0' }}>Background-checked, certified, and trained in clinical prehab.</p>
             </div>
 
-            <div className="card-clean">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                <PackageCheck size={18} color="var(--brand-gold)" />
-                <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>Equipment Provided</span>
+            {/* 5. Equipment Provided */}
+            <div className="theme-card" style={{
+              padding: '24px',
+              borderRadius: '16px',
+              border: '1px solid var(--border-subtle)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: 'var(--shadow-sm)'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                  <div style={{
+                    width: '42px',
+                    height: '42px',
+                    borderRadius: '10px',
+                    background: 'var(--brand-gold-soft)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <PackageCheck size={20} color="var(--brand-gold)" />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.8px', color: 'var(--text-muted)', fontWeight: 700, display: 'block' }}>
+                      Doorstep Logistics
+                    </span>
+                    <span style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-main)' }}>
+                      Equipment Provided
+                    </span>
+                  </div>
+                </div>
+                <div style={{ fontSize: '16px', fontWeight: 800, color: 'var(--brand-gold-text)', lineHeight: 1.4, marginBottom: '8px' }}>
+                  {program.specs.equipmentProvided}
+                </div>
+                <p style={{ fontSize: '13.5px', color: 'var(--text-body)', lineHeight: 1.6, margin: 0 }}>
+                  Hospital-grade sanitized gear transported directly to your living room. No home equipment purchase required.
+                </p>
               </div>
-              <div style={{ fontSize: '14.5px', fontWeight: 700, color: 'var(--text-main)', lineHeight: 1.4 }}>{program.specs.equipmentProvided}</div>
-              <p style={{ fontSize: '12.5px', color: 'var(--text-body)', margin: '6px 0 0' }}>Brought directly to your home and sanitized before each use.</p>
             </div>
 
-            <div className="card-clean">
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
-                <MapPin size={18} color="var(--brand-gold)" />
-                <span style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 600 }}>Active Service Regions</span>
+            {/* 6. Active Service Regions */}
+            <div className="theme-card" style={{
+              padding: '24px',
+              borderRadius: '16px',
+              border: '1px solid var(--border-subtle)',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              boxShadow: 'var(--shadow-sm)'
+            }}>
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+                  <div style={{
+                    width: '42px',
+                    height: '42px',
+                    borderRadius: '10px',
+                    background: 'var(--brand-gold-soft)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
+                    <MapPin size={20} color="var(--brand-gold)" />
+                  </div>
+                  <div>
+                    <span style={{ fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.8px', color: 'var(--text-muted)', fontWeight: 700, display: 'block' }}>
+                      Coverage Network
+                    </span>
+                    <span style={{ fontSize: '15px', fontWeight: 700, color: 'var(--text-main)' }}>
+                      Active Service Regions
+                    </span>
+                  </div>
+                </div>
+                <div style={{ fontSize: '16px', fontWeight: 800, color: 'var(--brand-gold-text)', lineHeight: 1.4, marginBottom: '8px' }}>
+                  {program.specs.locations}
+                </div>
+                <p style={{ fontSize: '13.5px', color: 'var(--text-body)', lineHeight: 1.6, margin: 0 }}>
+                  Prompt doorstep arrival across high-rise apartments, gated societies, and private villas with flexible morning and evening slots.
+                </p>
               </div>
-              <div style={{ fontSize: '14.5px', fontWeight: 700, color: 'var(--text-main)', lineHeight: 1.4 }}>{program.specs.locations}</div>
-              <p style={{ fontSize: '12.5px', color: 'var(--text-body)', margin: '6px 0 0' }}>On-time doorstep arrival across all major residential sectors.</p>
             </div>
           </div>
         </div>
